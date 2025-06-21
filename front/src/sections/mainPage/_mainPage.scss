@@ -1,0 +1,99 @@
+.mainPage {
+  position: relative;
+  header {
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      max-width: 59px;
+      max-height: 50px;
+    }
+    .header-nav ul {
+      display: flex;
+      text-decoration: none;
+      gap: 8px;
+      li {
+        text-transform: capitalize;
+        color: #fff;
+        width: 147px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        font-size: 15px;
+        text-align: center;
+        border: 4px solid #fff;
+        border-radius: 30px;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .mainPageContent {
+    margin-bottom: 5rem;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    .mainPageContent-left {
+      font-family: var(--third-family);
+      text-align: right;
+      p {
+        font-family: var(--third-family);
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 80px;
+        color: #000;
+      }
+      span {
+        font-weight: 800;
+        font-size: 25px;
+        color: #909090;
+      }
+    }
+    .mainPageContent-right {
+      img {
+        border: 10px solid white;
+        border-radius: 50%;
+      }
+      &:after {
+        background-color: #000;
+        position: absolute;
+        content: '';
+        width: 62%;
+        height: 1500px;
+        right: -50px;
+        top: -100px;
+        rotate: (10deg);
+        z-index: -1;
+      }
+    }
+  }
+
+  .mainPageFooter {
+    height: 250px;
+    background: linear-gradient(95deg, #1d1d1d 0%, #1d1d1d 100%, #1d1d1d 100%);
+    padding: 40px 102px;
+    h5 {
+      font-size: 30px;
+      letter-spacing: 0.19em;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+    p {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 139%;
+      text-align: justify;
+      color: #fff;
+    }
+  }
+}
