@@ -1,10 +1,12 @@
 .mainPage {
   position: relative;
+  overflow: hidden;
   header {
     margin-bottom: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     img {
       max-width: 59px;
       max-height: 50px;
@@ -26,14 +28,18 @@
         text-align: center;
         border: 4px solid #fff;
         border-radius: 30px;
+        transition: all 0.4s ease-in-out;
         &:hover {
           background-color: white;
           color: black;
+          transition: all 0.4s ease-in-out;
         }
       }
     }
+    .header-burger {
+      display: none;
+    }
   }
-
   .mainPageContent {
     margin-bottom: 5rem;
     display: flex;
@@ -60,10 +66,12 @@
     }
     .mainPageContent-right {
       img {
+        width: 400px;
         border: 10px solid white;
         border-radius: 50%;
       }
       &:after {
+        transition: all 0.6s ease-in-out;
         background-color: #000;
         position: absolute;
         content: '';
@@ -78,7 +86,9 @@
   }
 
   .mainPageFooter {
-    height: 250px;
+    .mainPageFooterVideo {
+      display: none;
+    }
     background: linear-gradient(95deg, #1d1d1d 0%, #1d1d1d 100%, #1d1d1d 100%);
     padding: 40px 102px;
     h5 {
@@ -94,6 +104,148 @@
       line-height: 139%;
       text-align: justify;
       color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  .mainPage {
+    header {
+      margin-bottom: 9rem;
+      .header-nav ul li {
+        color: #000;
+        border: 4px solid black;
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
+    .mainPageContent {
+      .mainPageContent-right {
+        &::after {
+          right: -1000px;
+          transition: all 0.6s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 922px) {
+  .mainPage {
+    header {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    header {
+      justify-content: space-between;
+      align-items: center;
+
+      .header-nav {
+        display: none;
+      }
+
+      .header-burger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .burger-el {
+          width: 30px;
+          border-bottom: 5px solid white;
+          border-radius: 20%;
+        }
+      }
+    }
+
+    .mainPageContent {
+      flex-direction: column-reverse;
+      gap: 10px;
+
+      .mainPageContent-left {
+        p {
+          font-family: var(--third-family);
+          font-size: 20px;
+          color: white;
+        }
+        h2 {
+          font-size: 40px;
+          color: white;
+        }
+        span {
+          font-weight: 800;
+          font-size: 15;
+          color: #909090;
+        }
+      }
+
+      .mainPageContent-right {
+        img {
+          width: 300px;
+        }
+        &::after {
+          display: block;
+          width: 100%;
+          rotate: (0deg);
+          left: 0px;
+        }
+      }
+    }
+
+    .mainPageFooter {
+      background: none;
+      .mainPageFooterVideo {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        opacity: 0.4;
+      }
+
+      h5 {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainPage {
+    header {
+      margin-bottom: 50px;
+    }
+
+    .mainPageFooter {
+      padding: 30px auto;
+      background: none;
+      .mainPageFooterVideo {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        opacity: 0.4;
+      }
+
+      h5 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 8px;
+      }
     }
   }
 }

@@ -1,5 +1,8 @@
 @use './base/base';
 
+@use '../components/UI/UI.scss';
+
 @use '../components/header/headerComponent';
 
 @use '../sections/mainPage/mainPage';
+@use '../sections/aboutMe//aboutMe.scss';

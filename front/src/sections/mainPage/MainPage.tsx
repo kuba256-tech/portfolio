@@ -1,5 +1,6 @@
 import headerLogo from '../../assets/akLogo.png';
 import myPic from '../../assets/me.svg';
+import backVideo from '../../assets/videoBack1.mp4';
 
 const MainPage = () => {
   return (
@@ -22,6 +23,11 @@ const MainPage = () => {
             </li>
           </ul>
         </nav>
+        <div className="header-burger">
+          <div className="burger-el"></div>
+          <div className="burger-el"></div>
+          <div className="burger-el"></div>
+        </div>
       </header>
       <div className="mainPageContent container">
         <div className="mainPageContent-left">
@@ -35,13 +41,17 @@ const MainPage = () => {
         </div>
       </div>
       <div className="mainPageFooter">
+        <video className="mainPageFooterVideo" autoPlay muted loop src={backVideo}></video>
         <h5>My Goals</h5>
         <p>
-          Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem
-          sed viverra. In vel urna quis libero viverra facilisis ut ac est. Morbi commodo, eros in dignissim tempus,
-          lacus odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit
-          amet elit. Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut
-          ante justo, consequat vitae elementum tempor, accumsan nec eros.{' '}
+          My goal as a front-end developer is to achieve technical and creative mastery in building responsive,
+          accessible, and user-centered web interfaces. I aim to continuously grow my expertise in modern web
+          technologies such as HTML, CSS, JavaScript, and frameworks like React or Vue, while staying up to date with
+          evolving industry standards and design trends. I am passionate about translating complex problems into clean,
+          efficient, and scalable solutions that enhance usability and performance across all devices. Beyond writing
+          code, I strive to collaborate effectively with designers, back-end developers, and product teams to deliver
+          seamless digital experiences. In the long term, I aspire to lead projects, contribute to design systems,
+          mentor junior developers, and help shape the front-end strategy of impactful and innovative products.
         </p>
       </div>
     </div>

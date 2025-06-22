@@ -1,0 +1,16 @@
+.sectionButton {
+  border: 8px solid #000;
+  width: 404px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 30px;
+    line-height: 128%;
+    letter-spacing: 0.36em;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+  }
+}
