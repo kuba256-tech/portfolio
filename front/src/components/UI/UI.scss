@@ -5,6 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
   p {
     font-size: 30px;
     line-height: 128%;
@@ -12,5 +15,21 @@
     text-align: center;
     color: #000;
     text-transform: uppercase;
+  }
+}
+
+.separator-black {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .sectionButton {
+    width: 300px;
+    height: 57px;
+    p {
+      font-size: 20px;
+    }
   }
 }

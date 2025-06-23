@@ -1,5 +1,11 @@
+import SectionButton from '../../components/UI/SectionButton';
+
 const PortFolio = () => {
-  return <div></div>;
+  return (
+    <div>
+      <SectionButton value="Portfolio" />
+    </div>
+  );
 };
 
 export default PortFolio;

@@ -1,5 +1,62 @@
 .about-me {
   width: 100%;
-  display: flex;
-  justify-content: center;
+
+  .myBrief {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 139%;
+    text-align: center;
+    color: #050505;
+    margin-bottom: 15%;
+  }
+
+  .about-me-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    .about-me-contentItem {
+      position: relative;
+      max-width: 516px;
+      max-height: 177px;
+      .about-me-background {
+        position: absolute;
+        left: -30px;
+        top: -20px;
+      }
+      p {
+        font-size: 22px;
+        letter-spacing: 0.19em;
+        color: #000;
+        text-transform: uppercase;
+      }
+      span {
+        font-family: var(--second-family);
+        font-weight: 300;
+        font-size: 14px;
+        text-align: justify;
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    .myBrief {
+      font-size: 12px;
+    }
+    .about-me-content {
+      gap: 50px;
+      .about-me-contentItem {
+        p {
+          font-size: 15px;
+        }
+        span {
+          font-size: 11px;
+        }
+      }
+    }
+  }
 }
