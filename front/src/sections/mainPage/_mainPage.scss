@@ -82,6 +82,16 @@
         rotate: (10deg);
         z-index: -1;
       }
+      .mainPageContent-right-links {
+        display: flex;
+        justify-content: space-around;
+        img {
+          width: 6rem;
+          border-radius: none;
+          border: none;
+          background-color: rgb(169, 169, 170);
+        }
+      }
     }
   }
 

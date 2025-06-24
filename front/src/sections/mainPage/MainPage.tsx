@@ -1,6 +1,8 @@
 import headerLogo from '../../assets/akLogo.png';
 import myPic from '../../assets/me.svg';
 import backVideo from '../../assets/videoBack1.mp4';
+import { socialLinks } from '../../GlobalConstants';
+import test from '../../assets/gitDark.svg';
 
 const MainPage = () => {
   return (
@@ -38,6 +40,13 @@ const MainPage = () => {
         </div>
         <div className="mainPageContent-right">
           <img src={myPic} alt="myPic" />
+          <div className="mainPageContent-right-links">
+            {socialLinks.map((item, index) => (
+              <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+                <img src={item.icon} alt={item.title} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       <div className="mainPageFooter">

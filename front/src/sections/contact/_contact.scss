@@ -16,25 +16,7 @@
     .contact-form-tag {
       display: flex;
       flex-direction: column;
-      gap: 5rem;
-      .custom-input-group {
-        display: flex;
-        flex-direction: column;
-        .custom-input {
-          border: none;
-          padding: 10px 14px;
-          font-size: 16px;
-          border-left: 5px solid rgba(0, 0, 0, 0.4);
-          border-bottom: 5px solid rgba(0, 0, 0, 0.4);
-          border-radius: 6px;
-          transition: all 0.3s ease-in-out;
-          outline: none;
-          &:focus {
-            border-color: black;
-            transition: all 0.3s ease-in-out;
-          }
-        }
-      }
+      gap: 3rem;
 
       .contact-submit-button {
         cursor: pointer;

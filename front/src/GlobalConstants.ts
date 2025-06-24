@@ -27,6 +27,19 @@ import linkedin from './assets/LinkedinIcon.svg';
 import instagram from './assets/IgIcon.svg';
 import messageMe from './assets/messageIcon.svg';
 
+import linkedin_dark from './assets/linkedinIcon_dark.svg';
+import gitDark from './assets/gitDark.svg';
+import { link } from 'fs';
+
+export const socialLinks = [
+  { title: 'Git', icon: gitDark, link: 'https://github.com/kuba256-tech' },
+  {
+    title: 'Linkedin',
+    icon: linkedin_dark,
+    link: 'https://www.linkedin.com/in/kubanychbek-abdashimov-6839a8343',
+  },
+];
+
 export const aboutMeAbility = [
   {
     abilityPicture: designIcon,
@@ -38,13 +51,13 @@ export const aboutMeAbility = [
     abilityPicture: devIcon,
     abilityTitle: 'development',
     abilityDescription:
-      'I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.',
+      'can develop responsive web pages, reusable UI components (e.g. buttons, cards, modals), basic forms with validation, navigation menus, interactive elements using JavaScript or React, and simple API-connected features like displaying data from a backend — all while following design mockups and best practices.',
   },
   {
     abilityPicture: maintenanceIcon,
     abilityTitle: 'maintenance',
     abilityDescription:
-      'I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.',
+      ' can maintain UI components, fix layout and styling issues, update and refactor React components, manage navigation and forms, handle basic API integrations, clean up code, and use Git for version control—all while ensuring the user interface stays responsive, functional, and visually consistent.',
   },
 ];
 
@@ -77,8 +90,7 @@ export const skillsOther = [
 ];
 
 export const footerLinks = [
-  { title: 'faceBook', icon: faceBook },
-  { title: 'linkedin', icon: linkedin },
-  { title: 'instagram', icon: instagram },
-  { title: 'message', icon: messageMe },
+  { title: 'linkedin', icon: linkedin, link: 'https://www.linkedin.com/in/kubanychbek-abdashimov-6839a8343' },
+  { title: 'instagram', icon: instagram, link: 'https://www.instagram.com/kubanych_4/' },
+  { title: 'message', icon: messageMe, link: 'mailto:kuba256.tech@gmail.com' },
 ];

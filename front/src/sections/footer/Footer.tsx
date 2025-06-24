@@ -1,4 +1,5 @@
 import { footerLinks } from '../../GlobalConstants';
+import gmail from '../../assets/messageIcon.svg';
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <ul className="footer-links">
         {footerLinks.map((item, index) => (
           <li key={index}>
-            <a href="#">
+            <a href={item.link}>
               <img src={item.icon} alt={item.title} />
             </a>
           </li>

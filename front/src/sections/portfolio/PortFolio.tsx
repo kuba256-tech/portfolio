@@ -13,9 +13,7 @@ const PortFolio = () => {
           <button className="">front-end</button>
           <button className="">full-stack</button>
         </div>
-        <div className="portfolios">
-          <img src={git} alt="git" />
-        </div>
+        <div className="portfolios container"></div>
       </div>
     </div>
   );
