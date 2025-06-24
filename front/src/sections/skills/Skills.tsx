@@ -9,12 +9,13 @@ import SeparatorBlack from '../../components/UI/SeparatorBlack';
 
 const Skills = () => {
   return (
-    <div className="skills container">
+    <div className="skills container" id="skills">
       <SeparatorBlack />
       <SectionButton value="Skills" />
       <div className="skills-content-list">
         <SkillsContent title="Front-End" skillsList={skillsFrontEnd} />
         <SkillsContent title="Back-End" skillsList={skillsBack} />
+        <SkillsContent title="Frameworks" skillsList={skillsFrameWork} />
         <SkillsContent title="Others" skillsList={skillsOther} />
       </div>
     </div>

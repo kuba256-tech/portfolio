@@ -4,7 +4,7 @@ import { aboutMeAbility } from '../../GlobalConstants';
 import SeparatorBlack from '../../components/UI/SeparatorBlack';
 const AboutMe = () => {
   return (
-    <div className="about-me container">
+    <div className="about-me container" id="aboutMe">
       <SectionButton value={'about me'} />
       <div>
         <p className="myBrief">

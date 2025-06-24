@@ -10,16 +10,16 @@ const MainPage = () => {
         <nav className="header-nav">
           <ul>
             <li>
-              <a href="#">about me</a>
+              <a href="#aboutMe">about me</a>
             </li>
             <li>
-              <a href="#">skills</a>
+              <a href="#skills">skills</a>
             </li>
             <li>
-              <a href="#">portfolio</a>
+              <a href="#porfolio">portfolio</a>
             </li>
             <li>
-              <a href="#">contact me</a>
+              <a href="#contact">contact me</a>
             </li>
           </ul>
         </nav>

@@ -1,9 +1,22 @@
 import SectionButton from '../../components/UI/SectionButton';
+import git from '../../assets/GITIcon.svg';
 
 const PortFolio = () => {
   return (
-    <div>
-      <SectionButton value="Portfolio" />
+    <div className="portfolio" id="porfolio">
+      <div className="portfolio-top">
+        <SectionButton value="Portfolio" />
+      </div>
+      <div className="portfolio-mid">
+        <div className="portfolio-selections">
+          <button className="">all</button>
+          <button className="">front-end</button>
+          <button className="">full-stack</button>
+        </div>
+        <div className="portfolios">
+          <img src={git} alt="git" />
+        </div>
+      </div>
     </div>
   );
 };

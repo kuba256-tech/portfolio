@@ -22,6 +22,11 @@ import gitIcon from './assets/gitIcon.svg';
 import reduxIcon from './assets/reduxIcon.png';
 import routerIcon from './assets/reactRouterIcon.svg';
 
+import faceBook from './assets/facebookIcon.svg';
+import linkedin from './assets/LinkedinIcon.svg';
+import instagram from './assets/IgIcon.svg';
+import messageMe from './assets/messageIcon.svg';
+
 export const aboutMeAbility = [
   {
     abilityPicture: designIcon,
@@ -55,7 +60,6 @@ export const skillsFrontEnd = [
 export const skillsFrameWork = [
   { title: 'React', icon: reactIcon },
   { title: 'Vue', icon: vueIcon },
-  { title: 'Vite', icon: viteIcon },
 ];
 
 export const skillsBack = [
@@ -68,5 +72,13 @@ export const skillsOther = [
   { title: 'TypeScript', icon: tsIcon },
   { title: 'GitHub', icon: gitIcon },
   { title: 'redux', icon: reduxIcon },
-  { title: 'React-Router', icon: routerIcon },
+  { title: 'Router', icon: routerIcon },
+  { title: 'Vite', icon: viteIcon },
+];
+
+export const footerLinks = [
+  { title: 'faceBook', icon: faceBook },
+  { title: 'linkedin', icon: linkedin },
+  { title: 'instagram', icon: instagram },
+  { title: 'message', icon: messageMe },
 ];
