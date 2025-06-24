@@ -1,5 +1,4 @@
 import React from 'react';
-import pic from '../../assets/DesignIcon.svg';
 
 interface IAboutMeContent {
   abilityPicture: string;

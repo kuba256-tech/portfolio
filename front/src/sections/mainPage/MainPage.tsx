@@ -2,7 +2,6 @@ import headerLogo from '../../assets/akLogo.png';
 import myPic from '../../assets/me.svg';
 import backVideo from '../../assets/videoBack1.mp4';
 import { socialLinks } from '../../GlobalConstants';
-import test from '../../assets/gitDark.svg';
 
 const MainPage = () => {
   return (

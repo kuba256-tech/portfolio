@@ -22,14 +22,13 @@ import gitIcon from './assets/gitIcon.svg';
 import reduxIcon from './assets/reduxIcon.png';
 import routerIcon from './assets/reactRouterIcon.svg';
 
-import faceBook from './assets/facebookIcon.svg';
 import linkedin from './assets/LinkedinIcon.svg';
 import instagram from './assets/IgIcon.svg';
 import messageMe from './assets/messageIcon.svg';
 
 import linkedin_dark from './assets/linkedinIcon_dark.svg';
 import gitDark from './assets/gitDark.svg';
-import { link } from 'fs';
+
 
 export const socialLinks = [
   { title: 'Git', icon: gitDark, link: 'https://github.com/kuba256-tech' },

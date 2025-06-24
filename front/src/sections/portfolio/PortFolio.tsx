@@ -1,5 +1,5 @@
 import SectionButton from '../../components/UI/SectionButton';
-import git from '../../assets/GITIcon.svg';
+
 
 const PortFolio = () => {
   return (

@@ -1,5 +1,4 @@
 import { footerLinks } from '../../GlobalConstants';
-import gmail from '../../assets/messageIcon.svg';
 
 const Footer = () => {
   return (
