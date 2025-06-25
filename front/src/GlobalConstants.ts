@@ -29,7 +29,6 @@ import messageMe from './assets/messageIcon.svg';
 import linkedin_dark from './assets/linkedinIcon_dark.svg';
 import gitDark from './assets/gitDark.svg';
 
-
 export const socialLinks = [
   { title: 'Git', icon: gitDark, link: 'https://github.com/kuba256-tech' },
   {

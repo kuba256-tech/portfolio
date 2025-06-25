@@ -1,14 +1,23 @@
+import { useState } from 'react';
 import headerLogo from '../../assets/akLogo.png';
 import myPic from '../../assets/me.svg';
 import backVideo from '../../assets/videoBack1.mp4';
+import Burger from '../../components/UI/Burger';
 import { socialLinks } from '../../GlobalConstants';
 
 const MainPage = () => {
+  const [isOpened, setIsOpened] = useState<boolean>(false);
+
+  const openBurger = () => {
+    setIsOpened((prevState) => !prevState);
+    console.log('sd');
+  };
+
   return (
     <div className="mainPage">
       <header className="container">
         <img src={headerLogo} alt="logo" />
-        <nav className="header-nav">
+        <nav className={`header-nav ${isOpened && 'openNav'}`}>
           <ul>
             <li>
               <a href="#aboutMe">about me</a>
@@ -24,11 +33,7 @@ const MainPage = () => {
             </li>
           </ul>
         </nav>
-        <div className="header-burger">
-          <div className="burger-el"></div>
-          <div className="burger-el"></div>
-          <div className="burger-el"></div>
-        </div>
+        <Burger isOpened={isOpened} onClick={openBurger} />
       </header>
       <div className="mainPageContent container">
         <div className="mainPageContent-left">

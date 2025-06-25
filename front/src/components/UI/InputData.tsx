@@ -37,7 +37,7 @@ const InputData: React.FC<IDataInput> = ({ name, onChange, value, type }) => {
             id="message"
             className="custom-input"
             placeholder={`Input your ${name}`}
-            rows={5}
+            rows={3}
           ></textarea>
         </div>
       )}

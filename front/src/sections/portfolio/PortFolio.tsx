@@ -1,6 +1,5 @@
 import SectionButton from '../../components/UI/SectionButton';
 
-
 const PortFolio = () => {
   return (
     <div className="portfolio" id="porfolio">
