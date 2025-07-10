@@ -8,7 +8,9 @@
   }
   .portfolio-mid {
     background: #1a1a1a;
-    padding-top: 3rem;
+    padding: 5rem 1rem;
+  
+
     .portfolio-selections {
       display: flex;
       justify-content: center;
@@ -29,6 +31,23 @@
         cursor: pointer;
         &:hover {
           opacity: 1;
+        }
+      }
+    }
+    .portfolios {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap:2rem;
+      .project {
+        text-align: center;
+        border: 1px solid white;
+        padding: 1rem 1rem;
+        img{
+          width: 100%;
+        }
+        p {
+          color: white;
         }
       }
     }
