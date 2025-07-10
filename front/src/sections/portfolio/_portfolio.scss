@@ -9,7 +9,6 @@
   .portfolio-mid {
     background: #1a1a1a;
     padding: 5rem 1rem;
-  
 
     .portfolio-selections {
       display: flex;
@@ -38,16 +37,21 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap:2rem;
+      gap: 2rem;
       .project {
         text-align: center;
         border: 1px solid white;
         padding: 1rem 1rem;
-        img{
+        img {
           width: 100%;
         }
         p {
           color: white;
+          text-transform: uppercase;
+        }
+        span {
+          color: #aaa;
+          font-size: 0.9rem;
         }
       }
     }

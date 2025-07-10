@@ -54,7 +54,14 @@ const MainPage = () => {
         </div>
       </div>
       <div className="mainPageFooter">
-        <video className="mainPageFooterVideo" autoPlay muted loop src={backVideo} style={{pointerEvents:"none"}}></video>
+        <video
+          className="mainPageFooterVideo"
+          autoPlay
+          muted
+          loop
+          src={backVideo}
+          style={{ pointerEvents: 'none' }}
+        ></video>
         <h5>My Goals</h5>
         <p>
           My goal as a front-end developer is to achieve technical and creative mastery in building responsive,

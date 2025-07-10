@@ -1,5 +1,5 @@
 import SectionButton from '../../components/UI/SectionButton';
-import project1 from "../../assets/projectPic/project_1.svg"
+import project1 from '../../assets/projectPic/project_1.svg';
 
 const PortFolio = () => {
   return (
@@ -14,12 +14,13 @@ const PortFolio = () => {
           <button className="">full-stack</button>
         </div>
         <div className="portfolios container">
-         <div className='project'>
-           <a href="https://pizza-order-front.vercel.app" target='_blank'>
-            <img src={project1} alt="pics" />
-          </a>
-          <p>order Pizza</p>
-         </div>
+          <div className="project">
+            <a href="https://pizza-order-front.vercel.app" target="_blank">
+              <img src={project1} alt="pics" />
+            </a>
+            <p>Order Pizza</p>
+            <span>Mobile version</span>
+          </div>
         </div>
       </div>
     </div>
