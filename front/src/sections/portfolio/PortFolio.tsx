@@ -1,5 +1,6 @@
 import SectionButton from '../../components/UI/SectionButton';
 import project1 from '../../assets/projectPic/project_1.svg';
+import project2 from '../../assets/projectPic/project_2.png';
 
 const PortFolio = () => {
   return (
@@ -19,6 +20,13 @@ const PortFolio = () => {
               <img src={project1} alt="pics" />
             </a>
             <p>Order Pizza</p>
+            <span>Mobile version</span>
+          </div>
+          <div className="project">
+            <a href="http://star-bucks-wheat.vercel.app" target="_blank">
+              <img src={project2} alt="pics" />
+            </a>
+            <p>StarBucks</p>
             <span>Mobile version</span>
           </div>
         </div>
