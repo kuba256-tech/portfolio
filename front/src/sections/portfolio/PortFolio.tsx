@@ -1,6 +1,7 @@
 import SectionButton from '../../components/UI/SectionButton';
 import project1 from '../../assets/projectPic/project_1.svg';
 import project2 from '../../assets/projectPic/project_2.png';
+import project3 from '../../assets/projectPic/project_3.png';
 
 const PortFolio = () => {
   return (
@@ -15,12 +16,12 @@ const PortFolio = () => {
           <button className="">full-stack</button>
         </div>
         <div className="portfolios container">
-          <div className="project">
-            <a href="https://pizza-order-front.vercel.app" target="_blank">
-              <img src={project1} alt="pics" />
+           <div className="project">
+            <a href="http://todoapp-theta-eosin.vercel.app" target="_blank">
+              <img src={project3} alt="pics" />
             </a>
-            <p>Order Pizza</p>
-            <span>Mobile version</span>
+            <p>TodoList</p>
+            <span>Mobile version (MERN)</span>
           </div>
           <div className="project">
             <a href="http://star-bucks-wheat.vercel.app" target="_blank">
@@ -28,6 +29,13 @@ const PortFolio = () => {
             </a>
             <p>StarBucks</p>
             <span>Mobile version</span>
+          </div>
+            <div className="project">
+            <a href="https://pizza-order-front.vercel.app" target="_blank">
+              <img src={project1} alt="pics" />
+            </a>
+            <p>Order Pizza</p>
+            <span>Mobile version (Not completed)</span>
           </div>
         </div>
       </div>
